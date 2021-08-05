@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.form-input {
+  margin: 1rem 0;
+}
+
+.form-input label,
+.form-input input {
+  display: block;
+}
+
+.form-input label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-input input {
+  width: 100%;
+  font: inherit;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0.15rem 0.25rem;
+}
+
+.form-input input:focus {
+  outline: none;
+  background: #ebebeb;
+  border-color: #510077;
+}
+
+.form-input--invalid label,
+.form-input--invalid p {
+  color: red;
+}
+
+.form-input--invalid input {
+  border-color: red;
+  background: #ffd1d1;
+}

@@ -12,7 +12,7 @@ const Input = props => {
   const [blur,setBlur] = React.useState(false);
 
    return (
-     <div className={`form-input${!blur ? '' : validate(data,props.validators) ? '':'--invalid'} `} data-testid="form-input">
+     <div className={`form-input${!blur ? '' : validate(data,props.validators) ? '':' form-input--invalid'} `} data-testid="form-input">
        <label htmlFor={props.id}>{props.label}</label>
        <input type={props.type} id={props.id} onChange={e=>{setData(e.target.value);setBlur(false)}} onBlur={e=>setBlur(true)}/>
        <p>{

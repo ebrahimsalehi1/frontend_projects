@@ -1,4 +1,14 @@
 input-validation/node_modules
 input-validation/package-lock.json
 
+errors-boundary/node_modules
 errors-boundary/package-lock.json
+
+Quera_SnappShop/node_modules
+Quera_SnappShop/package-lock.json
+
+unit-converter/node_modules
+unit-converter/package-lock.json
+
+url-generator/node_modules
+url-generator/package-lock.json

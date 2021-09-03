@@ -7,7 +7,7 @@ if not (n>=1 and n<=100):
 
 list_output = [0 for i in range(n+1)]
 
-list_input = map(lambda x:int(x),input('').strip().split(" ")) 
+list_input = map(lambda x:int(x) if int(x)>=1 and int(x)<=n else sys.exit(),input('').strip().split(" ")) 
 #list_input = list(map(int,input("").strip().split()))[:n]
 
 for i in list_input:

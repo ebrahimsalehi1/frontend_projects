@@ -1,25 +1,23 @@
 
-PI = 3.14
+import math
 
 def get_func(list):
     listFunc = []
     for shape in list:
-        print(shape)
         if shape=='square':
             func = lambda x : x*x
         elif shape=='circle':
-            func = lambda r : PI*r*r
+            func = lambda r : math.pi * r * r
         elif shape=='rectangle':
-            func = lambda x,y : x*y
+            func = lambda x,y : x * y
         elif shape=='triangle':
-            func = lambda h,r : h*r/2
+            func = lambda h,r : h * r / 2
 
         listFunc.append(func)
-        return listFunc
 
-ls = get_func(['square', 'circle', 'rectangle', 'triangle'])
+    return listFunc
 
-print(ls,sep='\n')
+# ls = get_func(['square', 'circle', 'rectangle', 'triangle'])
 
 # print(ls[0](1))
 # print(ls[1](2))

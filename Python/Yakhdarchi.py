@@ -6,4 +6,4 @@ if n>100:
 elif n<0:
     print('Ice')
 else:
-    print('Water')        
+    print('Water')         

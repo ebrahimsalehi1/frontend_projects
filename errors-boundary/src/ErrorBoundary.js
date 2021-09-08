@@ -10,6 +10,7 @@ export default class ErrorBoundary extends Component {
      }
 
      componentDidCatch(error,info){
+         
           this.props.state.error = "err";
           this.props.state.person =  {
                year : ''

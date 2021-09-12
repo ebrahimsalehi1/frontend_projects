@@ -1,17 +1,17 @@
-input-validation/node_modules
-input-validation/package-lock.json
+REACT/input-validation/node_modules
+REACT/input-validation/package-lock.json
 
-errors-boundary/node_modules
-errors-boundary/package-lock.json
+REACT/errors-boundary/node_modules
+REACT/errors-boundary/package-lock.json
 
-Quera_SnappShop/node_modules
-Quera_SnappShop/package-lock.json
+REACT/Quera_SnappShop/node_modules
+REACT/Quera_SnappShop/package-lock.json
 
-unit-converter/node_modules
-unit-converter/package-lock.json
+REACT/unit-converter/node_modules
+REACT/unit-converter/package-lock.json
 
-url-generator/node_modules
-url-generator/package-lock.json
+REACT/url-generator/node_modules
+REACT/url-generator/package-lock.json
 
 Nodejs/node_modules
 Nodejs/package-lock.json

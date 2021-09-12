@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
     
-
     <script>
 
         function changeBackgroundColor(){
-            var currentWidth = document.body.clientWidth;
-            //document.title=document.body.clientWidth;
+            var currentWidth = window.innerWidth;//document.body.clientWidth;
+            document.title=`${document.body.clientWidth}-${window.innerWidth}-${window.outerWidth}`;
             if(currentWidth<600)
                 document.body.style.backgroundColor='#F00'
             else if(600<=currentWidth && currentWidth<=900)
@@ -30,5 +30,6 @@
             changeBackgroundColor();
         })
     </script>
+
 </body>
 </html>

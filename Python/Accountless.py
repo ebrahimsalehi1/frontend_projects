@@ -13,6 +13,8 @@ sortedArr = sorted(arr,key=lambda x:x['time'])
 # filteredArr = filter(lambda x:x['status']!='FAIL',sortedArr)
 
 sumation = 0
+sumationVirtual = 0
+
 minVal = 0
 mult = 1
 for item in sortedArr:
@@ -22,8 +24,10 @@ for item in sortedArr:
         mult=-1
     elif item['type']=='WIT' and item['status']=='FAIL':
         mult=0
+        sumationVirtual=sumationVirtual-item['amount']
 
-    if mult==0 and abs(sumation)>item['amount']:
+    # if mult==0 and abs(sumation)>item['amount']:
+    if abs(sumationVirtual)>abs(sumation):
         print('DOROGHE')
         sys.exit()
 
@@ -31,5 +35,4 @@ for item in sortedArr:
     if sumation < minVal:
         minVal = sumation
 
-# print(*filteredArr,sep='\n')
 print(abs(minVal))

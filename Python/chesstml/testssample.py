@@ -1,7 +1,7 @@
+import os
 import unittest
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 from solution import process
-
 
 class Test(unittest.TestCase):
 	def test_1(self):
@@ -10,3 +10,8 @@ class Test(unittest.TestCase):
 	def test_2(self):
 		self.assertEqual(process("htmlsampletest2.html"), 4)
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+
+t=Test()
+
+t.test_1()
+t.test_2()

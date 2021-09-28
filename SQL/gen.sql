@@ -1,40 +1,30 @@
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (1,'Kari','Stanton','Arianna.Howell88@gmail.com');
+    (1,'Beatrice','Beatrice','Christophe63@gmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (2,'London','Nikolaus','Alta_Mohr@yahoo.com');
+    (2,'Kyleigh','Sister','Kacie.Vandervort49@hotmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (3,'Addie','Mueller','Kathryn_Bednar87@yahoo.com');
+    (3,'Colten','Sister','Cesar35@hotmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (4,'Nina','Schmidt','Ryley_Wiegand@yahoo.com');
+    (4,'Beatrice','Judson','Nona0@yahoo.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (5,'London','Casper','Rodger55@gmail.com');
+    (5,'Jettie','Judson','Nicolas.Auer@yahoo.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (6,'Waylon','Roob','Rosalind.Little@gmail.com');
+    (6,'Sister','Mervin','Della.Stroman@hotmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (7,'Kari','Turner','Liliane53@hotmail.com');
+    (7,'Judson','Filiberto','Frida_Harber38@gmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (8,'Kari','Ward','Josefa_Cronin60@hotmail.com');
+    (8,'Kyleigh','Sister','Donavon_Weber@yahoo.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (9,'Waylon','Schamberger','Tania_Daniel68@hotmail.com');
+    (9,'Colten','Mervin','Parker_Feest50@gmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (10,'Nina','Abernathy','Tristin_Jones3@gmail.com');
+    (10,'Taylor','Mervin','Tevin.Little@yahoo.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (11,'London','White','Matilda_Bogan97@hotmail.com');
+    (11,'Colten','Taylor','Reina.Price45@hotmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (12,'Kari','Wilderman','Frida68@hotmail.com');
+    (12,'Mervin','Mervin','Dina_Kovacek@hotmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (13,'London','Carroll','Unique_Parisian@hotmail.com');
+    (13,'Judson','Meagan','Adela44@hotmail.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (14,'Nina','Balistreri','Alanis_West@gmail.com');
+    (14,'Judson','Colten','Jeff_Kutch@yahoo.com');
 INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (15,'London','O'Conner','Foster59@hotmail.com');
-INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (16,'Addie','Rippin','Zita49@gmail.com');
-INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (17,'Waylon','Hyatt','Arielle11@yahoo.com');
-INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (18,'London','Gottlieb','Gaylord70@gmail.com');
-INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (19,'Nina','Fay','Ezra.Reynolds75@yahoo.com');
-INSERT INTO Contacts(ID,FIRST_NAME,LAST_NAME,EMAIL) VALUES 
-    (20,'Nina','Wisozk','Alexzander_Mitchell@hotmail.com');
+    (15,'Mervin','Taylor','Keshaun87@yahoo.com');

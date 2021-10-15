@@ -16,5 +16,8 @@ REACT/url-generator/package-lock.json
 Nodejs/node_modules
 Nodejs/package-lock.json
 
+Nodejs/Teaching/node_modules
+Nodejs/Teaching/package-lock.json
+
 SQL/node_modules
 SQL/package-lock.json

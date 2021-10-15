@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json:server":"json-server --watch hr-db.json",
+    "start:hr": "json-server --watch hr-db.json",
+    "start:shop": "json-server --watch shop-db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

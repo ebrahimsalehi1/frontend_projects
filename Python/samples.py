@@ -1,14 +1,28 @@
+class Human:
+    def __init__(self,name):
+        self.name=name
 
-def apply(*nums,operator):
-    result = 0
+    def __str__(self):
+        return self.name
 
-    if operator=="*":
-        result=1
-        for num in nums:
-            result=result*num
-    elif operator=="+":
-        result = sum(nums)
+    def process(self):
+        counter = 1
+        while counter<10:
+            counter=counter+1
+        print(counter)
 
-    return result
+# class Employee(Human):
+#     @property
+#     employeeId
 
-print(apply(1,2,3,4,operator="*"))
+#     def __init__(self,employeeId):
+#         pass            
+
+def fun1(x='python'):
+    print(x)
+
+def calc(a,b=4):
+    return a+b    
+
+print(calc(20+5))
+

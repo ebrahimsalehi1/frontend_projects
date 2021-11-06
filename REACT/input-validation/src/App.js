@@ -8,10 +8,10 @@ import {
   VALIDATOR_MAX,
   VALIDATOR_EMAIL
 } from './validators';
+import axios from 'axios';
 
 function App() {
 
-  
   return (
     <div className="app">
       <Input

@@ -1,0 +1,60 @@
+.poll-controls{
+    width: 400px;
+    height: 650px;
+    background-color: #ddd;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.poll-title-input{
+    width: 320px;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: auto;
+}
+
+.poll-emoji-checkboxes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.DescriptionItem-container{
+    border: 1px solid rgb(196, 196, 196);
+    margin: 10px 0px;
+    border-radius: 5px;
+    height: 85px;
+    padding: 5px;
+}
+
+.DescriptionItem-container label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.DescriptionItem-container input{
+    width: 250px;
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    overflow: auto;
+    margin-top: 5px;
+}
+
+.Emoji_checkbox{
+    width: 48px;
+    height: 48px;
+}
+
+.Emoji_description{
+    width: 25px;
+    height: 25px;
+}

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background: #ddd;
+    padding: 20px;
+    height: 760px;
+    display: flex;
+    align-items: center;
+}
+
+.poll-container{
+    background-color: #fff;
+    width: 1200px;
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

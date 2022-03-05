@@ -12,7 +12,7 @@ while True:
     if i>=j:
         break
 
-    if arr[j]<k:
+    if arr[j]<k and arr[j]>0:
         arr[i]=arr[i]-(k-arr[j])
         arr[j]=k
         j=j-1

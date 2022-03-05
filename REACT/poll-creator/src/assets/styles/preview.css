@@ -1,0 +1,39 @@
+.poll-preview{
+    width: 800px;
+    height: 650px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.poll-preview-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.poll-preview-emoji{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.poll-preview-emoji-item{
+  margin:12px 30px;
+  font-size: 23px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow: wrap;
+}
+
+.Emoji_preview{
+  width: 120px;
+  height: 120px;
+}

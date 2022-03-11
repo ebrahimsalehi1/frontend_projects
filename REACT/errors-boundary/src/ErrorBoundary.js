@@ -1,40 +1,39 @@
 import React, {Component} from 'react'
 import Error from "./Error";
+
+const ErrorM = ()=>{
+     console.log('ErrorM is rendering');
+     return <div><button onClick={()=>{alert(0)}}>Click ME</button></div>
+}
 export default class ErrorBoundary extends Component {
 
-
-     constructor(props){
-          super(props);
-
-          this.state = {reload:false};
+     state={
+          hasError:false
      }
+     // constructor(props){
+     //      super();
+     //      this.state={
+     //           hasError:false
+     //      }
+     // }
 
      componentDidCatch(error,info){
-         
-          this.props.state.error = "err";
-          this.props.state.person =  {
-               year : ''
-             };
+          this.setState({hasError:true})
 
-             this.setState({reload:!this.state.reload});
-     }     
-     
+          //this.props.onError(error,info);
+
+     }
+
+     // static getDerivedStateFromError(error) {
+     //      return { hasError: true };
+     //  }
+
+
      render (){
-          // console.log("render ErrorBoundary",this.props.state)
-           if(this.props.state.error==='err')
-               return(<Error reloadBtnOnClick={e=>{
-                    //this.setState({person:{year:''},error:''}); 
-                    // this.props.state.error = "";
-                    // this.props.state.person =  {
-                    //      year : ''
-                    // };
-                         //this.setState({reload:!this.state.reload});   
-                         this.props.reloadBtnOnClick();       
-                         //console.log("click",this.props.state.error)           
-               }}/>)
+
+          if(this.state.hasError)
+               return (<div><button onClick={()=>{alert(1)}}>mmm,</button></div>);
           
-          return(<div>
-                    {this.props.children}
-               </div>)
+          return(this.props.children);
      }
 }

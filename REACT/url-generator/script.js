@@ -5,6 +5,16 @@ const baseUrl = "https://website.ir";
 
 const addNewParam = () => {
 
+  let elem = document.querySelectorAll('.q-input');
+
+  flag=true;
+  for(let item of elem){
+    if(item.placeholder=="Param" && item.value.length===0)
+      flag = false;
+  }
+  if(!flag)
+    return;
+
  const elemParams = document.querySelector('#params-container').querySelector(".keyValue-box");
 
  const newElem = document.createElement('input');
@@ -13,9 +23,19 @@ const addNewParam = () => {
 
  elemParams.appendChild(newElem);
 
- 
 };
 const addNewQuery = () => {
+
+  let elem = document.querySelectorAll('.q-input');
+
+  flag=true;
+  for(let item of elem){
+    if(item.placeholder=="Query Key" && item.value.length===0)
+      flag = false;
+  }
+  if(!flag)
+    return;
+
   const elemQueries = document.querySelector('#queries-container').querySelector(".keyValue-box");
 
   const newElemKey = document.createElement('input');
@@ -33,12 +53,11 @@ const generateURL = () => {
   let elem = document.querySelectorAll('.q-input');
   let myUrl =baseUrl;
 
+  //debugger;
   for(let item of elem){
     if(item.placeholder=="Param")
-      myUrl+='/'+item.value;
+      myUrl+=(item.value.length>0 ? '/':'')+item.value;
   }
-
-
 
   const arr = [];
   count=0;
@@ -46,6 +65,7 @@ const generateURL = () => {
   function getRow(key,value){
     return {key,value}
   }
+  //debugger;
   for(let item of elem){
     //obj={}
     if(item.placeholder=="Query Key"){
@@ -53,7 +73,7 @@ const generateURL = () => {
     }
 
     if(item.placeholder=="Query Value"){
-      obj.value=item.value;
+      obj.value=item.value;//.toLowerCase();
       //debugger;
       const foundIndex = arr.findIndex(item=>item.key==obj.key);
       
@@ -64,17 +84,20 @@ const generateURL = () => {
         //arr.splice(foundIndex,1);
       }
       else{
-        arr.push(new getRow(obj.key,obj.value));
+        if(obj.key!='' && obj.value!='')
+          arr.push(new getRow(obj.key,obj.value));
       }
     }
             
   } // for
 
-  myUrl+='?';
+  myUrl+=arr.length>0 ? '?':'';
   arr.forEach((item,index)=>{
     myUrl+=(index==0 ? '':'&')+item.key+'='+item.value;
   })
-  console.log(myUrl);
+  // console.log(myUrl);
+
+  renderUrl(myUrl);
 
 };
 

@@ -1,118 +1,122 @@
 
 n = int(input(''))       
 
+print(round(n**2/48) if n%2==0 else round((n+3)**2/48))
 
-count=1
-arr = []
+# Version 2
 
-def add_to_array(new_item):
-    flag_same = False
-    for item in arr:
-        if item==new_item: 
-            flag_same = True
+# count=1
+# arr = []
 
-    if flag_same==False:
-            arr.append(new_item)  
+# def add_to_array(new_item):
+#     flag_same = False
+#     for item in arr:
+#         if item==new_item: 
+#             flag_same = True
 
-
-x=y=n//3
-z=n-x-y
-
-add_to_array({x,y,z})
-
-for i in range(n):
-    x=x-1
-    y=y-1
-    z=z+2
-    if x==0 or y==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+#     if flag_same==False:
+#             arr.append(new_item)  
 
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x-1
-    y=y+2
-    z=z-1
-    if x==0 or z==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+# x=y=n//3
+# z=n-x-y
+
+# add_to_array({x,y,z})
+
+# for i in range(n):
+#     x=x-1
+#     y=y-1
+#     z=z+2
+#     if x==0 or y==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x-2
-    y=y+1
-    z=z+1
-    if x==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x-1
+#     y=y+2
+#     z=z-1
+#     if x==0 or z==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x+2
-    y=y-1
-    z=z-1
-    if y==0 or z==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x-2
+#     y=y+1
+#     z=z+1
+#     if x==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x+1
-    y=y-2
-    z=z+1
-    if y==0 :
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x+2
+#     y=y-1
+#     z=z-1
+#     if y==0 or z==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x+1
-    y=y+1
-    z=z-2
-    if z==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x+1
-    y=y
-    z=z-1
-    if z==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x+1
+#     y=y-2
+#     z=z+1
+#     if y==0 :
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
-x=y=n//3
-z=n-x-y
-for i in range(n):
-    x=x-1
-    y=y
-    z=z+1
-    if x==0:
-        break
-    if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
-        add_to_array({x,y,z})
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x+1
+#     y=y+1
+#     z=z-2
+#     if z==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
-print(len(arr))
-print(*arr,sep=' ')
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x+1
+#     y=y
+#     z=z-1
+#     if z==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
 
+# x=y=n//3
+# z=n-x-y
+# for i in range(n):
+#     x=x-1
+#     y=y
+#     z=z+1
+#     if x==0:
+#         break
+#     if (x+y+z==n and x+y>z and x+z>y and y+z>x):               
+#         add_to_array({x,y,z})
+
+# print(len(arr))
+# print(*arr,sep=' ')
+
+# Version 1
 # count = 0
 # arr = []
 # for i in range(1,n+1):

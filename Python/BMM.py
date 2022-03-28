@@ -10,5 +10,5 @@ def BMM(m,n):
         return m
     else:
         return BMM(n,m%n)
-
-print(BMM(valBigger,valSmaller))        
+res=BMM(valBigger,valSmaller)
+print(-res if res<0 else res)        

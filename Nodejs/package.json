@@ -5,14 +5,22 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./HardDiet/index.js",
-    "test": "mocha"
+    "test": "jest --watch",
+    "run-file": "ts-node  2596.ts",
+    "convert": "tsc  2596.ts --outFile 2596.js --module amd"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.15.0",
     "chai": "^4.3.4",
+    "jest": "^29.5.0",
     "mocha": "^9.0.3",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
   }
 }

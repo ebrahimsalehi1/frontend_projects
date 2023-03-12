@@ -1,9 +1,12 @@
 //-----------------------------------------------------------------------------------------------
+// https://quera.org/problemset/2596/
 
 export const calculateNumber = (arr: number[]) => {
   let j = 1;
   const multiple = arr.reduce((i, all) => i * all, 1);
-  while (multiple * j <= 1000) j++;
+  while (multiple * j <= 1000) {
+    j++;
+  }
   return j - 1;
 };
 

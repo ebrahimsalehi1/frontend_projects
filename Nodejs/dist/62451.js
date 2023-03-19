@@ -7,10 +7,24 @@ const searchForTorob = (x1, v1, x2, v2) => {
     const direction = v1 * v2;
     const v11 = Math.abs(v1);
     const v22 = Math.abs(v2);
-    if (direction < 0 && v11 === v22)
-        return "SEE `YOU";
-    if (direction > 0 && v11 === v22)
-        return "WAIT WAIT";
+    if (v11 === v22) {
+        if (x1 > x2 && v1 > 0 && v2 > 0) {
+            if (v22 > v11)
+                return "SEE YOU";
+            else
+                return "BORO BORO";
+        }
+        if (x1 > x2 && v1 > 0 && v2 < 0)
+            return "BORO BORO";
+        if (x1 > x2 && v1 < 0 && v2 > 0)
+            return "SEE YOU";
+        if (x1 > x2 && v1 < 0 && v2 < 0) {
+            if (v11 > v22)
+                return "SEE YOU";
+            else
+                "BORO BORO";
+        }
+    }
     if (x1 > x2 && v1 > 0 && v2 > 0) {
         if (v22 > v11)
             return "SEE YOU";

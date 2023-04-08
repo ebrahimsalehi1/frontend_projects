@@ -1,3 +1,4 @@
+// https://quera.org/contest/assignments/51235/problems/175166
 //-----------------------------------------------------------------------------------------------
 
 export const Tardasti = (lines: string[]): number[] => {

@@ -1,3 +1,4 @@
+// https://quera.org/contest/assignments/51235/problems/175167
 //-----------------------------------------------------------------------------------------------
 
 export const jozvehDarsi = (arr: number[]) => {

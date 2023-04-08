@@ -1,3 +1,4 @@
+// https://quera.org/contest/assignments/51235/problems/175165
 //-----------------------------------------------------------------------------------------------
 
 export const getHowManyTimes = (n: number): number => {

@@ -1,0 +1,87 @@
+body {
+  background: #253c64;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+ul {
+  /* TODO: your code here */
+}
+
+a {
+  /* TODO: your code here */
+}
+
+/* ------------------- navigation ----------------- */
+
+.navbar {
+  color: #ffffff;
+  margin-bottom: 70px;
+  padding: 20px 0;
+
+  /* TODO: your code here */
+}
+
+.navbar--links {
+  /* TODO: your code here */
+}
+
+.navbar--links li a {
+  transition: color 0.3s ease;
+}
+
+.navbar--links li a:hover {
+  color: #0099cc;
+}
+
+/* ------------------- tabs ----------------- */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  background: #90caf9;
+  font-weight: bold;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  transition: background ease 0.2s;
+}
+
+.tabs label:hover {
+  background-color: #0099cc;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+.tabs input[type="radio"] {
+  /* TODO: your code here */
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  /* TODO: your code here */
+}

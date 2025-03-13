@@ -16,7 +16,7 @@ for i in range(n):
         stars = stars+"\n"
 
     if i>=n//2:
-        j1=j1+1
+        j1=j1+1 
         j2=j2-1    
         j3=j3+1
         j4=j4-1   

@@ -4,11 +4,15 @@
     {
       "label": "Run Kotlin",
       "type": "shell",
-      "command": "kotlin",
-      "args": ["${file}"],
+      "command": "/opt/homebrew/bin/kotlinc",
+      "args": ["-include-runtime", "-d", "output.jar", "${file}"],
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "problemMatcher": ["$javac"],
+      "windows": {
+        "command": "kotlinc.bat"
       }
     }
   ]
